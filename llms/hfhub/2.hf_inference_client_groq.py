@@ -1,11 +1,10 @@
-## Set environment variable - HF_TOKEN - to access token 
 
 from huggingface_hub import InferenceClient
 import keys 
 
 client = InferenceClient(provider="groq",
                          api_key=keys.GROQ_API_KEY,
-                         model="openai/gpt-oss-120b")
+                         model="openai/gpt-oss-20b")
 
 messages = [
     {"role": "user", "content": "What is the capital of France?"}

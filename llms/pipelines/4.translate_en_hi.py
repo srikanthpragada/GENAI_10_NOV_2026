@@ -10,7 +10,7 @@ translator = pipeline(
 prompt = """
 Translate English to Hindi. Give no more details.
 
-How are you today?
+How are you?
 """
 
 result = translator(prompt, return_full_text=False)
